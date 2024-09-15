@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sections Mustache</title>
+  </head>
+  <body>
+    {{#hobbies}}
+    <li>{{.}}</li>
+    {{/hobbies}}
+    {{^hobbies}}
+    <p>Data hobbies tidak ditemukan</p>
+    {{/hobbies}}
+  </body>
+</html>
